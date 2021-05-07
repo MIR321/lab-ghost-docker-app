@@ -11,20 +11,13 @@ services:
       - ./blog:/var/lib/ghost/content
     environment:
       database__client: mysql
-      database__connection__host: db
+      database__connection__host: terraform-20210507074810311700000001.cb3e9cb9eatj.eu-west-1.rds.amazonaws.com
+      database__connection__port: 3306
       database__connection__user: root
-      database__connection__password: password
+      database__connection__password: helloworld
       database__connection__database: ghost
+      database__connection__ssl: "Amazon RDS"
       url: http://localhost:7676
-
-  db:
-    image: mysql:5.7
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: ghost
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
