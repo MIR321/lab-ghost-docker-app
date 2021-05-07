@@ -17,7 +17,7 @@ services:
       database__connection__password: helloworld
       database__connection__database: ghost
       database__connection__ssl: "Amazon RDS"
-      url: http://localhost:7676
+      url: http://34.244.62.25:7676
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
