@@ -11,7 +11,7 @@ services:
       - ./blog:/var/lib/ghost/content
     environment:
       database__client: mysql
-      database__connection__host: terraform-20210507074810311700000001.cb3e9cb9eatj.eu-west-1.rds.amazonaws.com
+      database__connection__host: terraform-20210507104827746600000001.cb3e9cb9eatj.eu-west-1.rds.amazonaws.com
       database__connection__port: 3306
       database__connection__user: root
       database__connection__password: helloworld
